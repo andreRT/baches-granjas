@@ -1,0 +1,3 @@
+.public-login.button { font-size: 14px; white-space: nowrap; }
+.public-dashboard .folio-public { font-weight: 600; color: #456f53; }
+@media (max-width: 600px) { .public-dashboard .topbar { gap: 10px; } .public-dashboard .breadcrumbs { gap: 8px; } .public-login.button { min-height: 38px; padding: 8px 12px; } }

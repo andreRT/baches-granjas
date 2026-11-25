@@ -1,0 +1,24 @@
+{
+  "institucion": "Instituto Electoral de la Ciudad de México",
+  "visor": "https://scmgpc.iecm.mx/Cartografia_SCMGPC.php",
+  "consulta": "https://scmgpc.iecm.mx/paginas/controlador.php",
+  "fecha_descarga": "2026-11-17T02:41:44.268Z",
+  "marco_publicado": "SCMGPC 2025",
+  "identificador_tecnico_origen": "ut_2024",
+  "criterio": "Unión de las unidades territoriales 06-050 y 06-051. Límites de participación ciudadana, no deslinde catastral.",
+  "transformaciones": "Conversión del formato de coordenadas del visor a GeoJSON. Sin redibujar, simplificar ni añadir una tolerancia en metros.",
+  "formato_coordenadas": "Longitud, latitud en grados; compatible con GeoJSON y Leaflet.",
+  "unidades": [
+    {
+      "clave": "06-050",
+      "nombre": "Granjas México I",
+      "vertices": 101
+    },
+    {
+      "clave": "06-051",
+      "nombre": "Granjas México II",
+      "vertices": 87
+    }
+  ],
+  "sha256_geojson": "9b890361c918fecb1429be33309177a3d0cf6a4d7226b7170536c22cf4c24ec0"
+}

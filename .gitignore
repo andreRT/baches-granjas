@@ -1,0 +1,15 @@
+node_modules/
+.npm-cache/
+.pip-cache/
+dist/
+.env
+.env.*
+!.env.example
+data/
+backups/
+tmp/
+__pycache__/
+*.py[cod]
+.venv/
+.python/
+*.log

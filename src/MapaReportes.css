@@ -1,0 +1,9 @@
+.coverage-legend { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 18px; padding: 12px 23px; font-size: 10px; color: #637460; }
+.coverage-legend > span { display: inline-flex; align-items: center; gap: 6px; }
+.coverage-swatch { display: inline-block; width: 11px; height: 9px; border: 2px solid; border-radius: 2px; }
+.coverage-swatch.first { border-color: #286b53; background: #5f9b7726; }
+.coverage-swatch.second { border-color: #386c9c; background: #6f9fc526; }
+.coverage-legend > a { margin-left: auto; color: #476346; text-underline-offset: 2px; }
+.leaflet-interactive:focus:not(:focus-visible) { outline: none; }
+.leaflet-interactive:focus-visible { outline: 3px solid #e8b958; outline-offset: 3px; }
+@media (max-width: 600px) { .coverage-legend { padding-inline: 16px; gap: 8px 12px; } }

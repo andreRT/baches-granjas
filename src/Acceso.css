@@ -1,0 +1,16 @@
+.access-page { min-height: 100dvh; display: grid; place-items: center; padding: 24px 18px; }
+.access-form { width: 100%; max-width: 400px; padding: 28px; border: 1px solid var(--borde); border-radius: 8px; background: white; }
+.access-form .back-public-dashboard { display: inline-block; border: 0; padding: 0; margin-bottom: 24px; background: transparent; color: var(--verde); font-size: 14px; cursor: pointer; }
+.access-form .back-public-dashboard:hover, .auth-switch:hover { text-decoration: underline; }
+.access-form h1 { margin: 0 0 25px; font-size: 26px; }
+.access-form form { display: grid; gap: 18px; }
+.access-form .field > span { font-size: 14px; }
+.access-form input, .access-form .button { font-size: 16px; width: 100%; min-height: 44px; }
+.access-form .form-error { font-size: 14px; margin: 0; }
+.auth-switch { display: block; margin: 22px auto 0; padding: 0; background: transparent; color: var(--verde); font-size: 14px; cursor: pointer; }
+.sidebar nav { margin-top: 32px; }
+.sidebar .local-badge { margin-bottom: 22px; }
+.workspace .main-content { padding-bottom: 30px; }
+.simple-overview { margin-bottom: 24px; }
+.public-dashboard td:last-child { width: auto; padding-left: 23px; }
+@media (max-width: 600px) { .access-form { padding: 24px; } .public-dashboard td:last-child { padding-left: 16px; } }
