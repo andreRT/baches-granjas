@@ -112,12 +112,6 @@ Para servir directamente la compilación con `npm start`, configura `ORIGEN_APLI
 
 La recarga de API compara cada segundo el contenido JavaScript y JSON de server/ y shared/. Los archivos internos de MySQL y los cambios de fecha de OneDrive no reinician la API. Al cambiar `.env` o el comando de arranque, detén y vuelve a iniciar el proyecto.
 
-## Delimitación geográfica
-
-La cobertura utiliza los contornos publicados por el IECM para las unidades territoriales **Granjas México I (06-050)** y **Granjas México II (06-051)**. El mapa distingue las dos zonas. React y la API validan la misma geometría; el servidor determina la unidad de cada reporte nuevo a partir de sus coordenadas. Los puntos sobre el borde son admitidos. Consulta la [fuente, el criterio y la actualización](docs/DELIMITACION.md).
-
-El archivo `public/geografia/granjas-mexico-i-ii.kml` permite revisar las zonas en Google My Maps. La aplicación utiliza Leaflet y OpenStreetMap como mapa base, con los límites del IECM guardados en el proyecto.
-
 ## Pendientes técnicos
 
 Prioridades acordadas el 24 de noviembre de 2026:
@@ -131,14 +125,6 @@ Prioridades acordadas el 24 de noviembre de 2026:
 El mapa de calor representa densidad de reportes; DBSCAN identifica grupos por proximidad. Ninguno determina por sí mismo la gravedad de una incidencia.
 
 El acceso público utiliza consultas específicas de solo lectura. Comparte folio, tipo, calle, colonia, ubicación, fecha y estado; los indicadores son totales agregados. Los contactos, fotografías, detalles privados, notificaciones y operaciones de gestión conservan sus permisos. Consulta [el flujo de acceso público](docs/ACCESO_PUBLICO.md).
-
-## Concentraciones y alertas automáticas
-
-La detección arranca con la API, se solicita después de registrar o cambiar el estado de un reporte y comprueba cambios cada 30 segundos aunque nadie abra el mapa. React actualiza los datos cada 15 segundos mientras la página está visible y al volver a ella. Inicio y Mapa muestran las concentraciones automáticamente; no hay un botón para iniciar el análisis.
-
-Se agrupan los reportes **Pendientes** o **En proceso de resolución** dentro de Granjas México I y II, con vecindad de 150 metros y mínimo de 3 reportes. La alcaldía recibe una alerta persistente al aparecer una zona y otra cuando su cantidad alcanza al menos el doble de la última alerta. Consultar o filtrar el mapa no genera avisos repetidos. Las alertas usan la bandeja de correo existente; su entrega externa sigue requiriendo SMTP.
-
-DBSCAN funciona con el motor de biblioteca estándar de Python, verificado en esta computadora. La opción scikit-learn conserva la integración prevista en los capítulos, pero sus dependencias numéricas siguen sujetas a la política de Windows y no se validaron aquí. No se modificaron protecciones del equipo. Consulta el [criterio, la persistencia y la verificación](docs/CONCENTRACIONES.md).
 
 ## Archivos principales
 
